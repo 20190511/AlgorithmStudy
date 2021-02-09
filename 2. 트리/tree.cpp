@@ -28,9 +28,7 @@ public:
 	Node *root;
 	Tree (int value = 0)
 	{
-		this->root->data = value; //data ÁöÁ¤. 
-		this->root->left = NULL;
-		this->root->right = NULL;
+		this->root = new Node();
 	}
 	
 	void preOrder (Node *node = root)
